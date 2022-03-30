@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editComment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".article.ArticleDetailFragment">
+
+    <ScrollView
+        android:id="@+id/svArticleDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/earthBackground">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivDetailUserIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_baseline_person_pin_24" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvDetailUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="人生好難"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+            <ImageView
+                android:id="@+id/ivDetailSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvDetailUserName" />
+
+            <TextView
+                android:id="@+id/tvDtdailResCategoryInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="超難吃美食餐廳"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/cardView2"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+            <TextView
+                android:id="@+id/tvDetailArticleTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="文章發表時間：2020/08/08"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/ivDetailSetting"
+                app:layout_constraintTop_toTopOf="@+id/tvDtdailResCategoryInfo" />
+
+            <TextView
+                android:id="@+id/tvDetailArticleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="199吃到飽下午茶，小資放鬆選擇新選擇"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/tvDtdailResCategoryInfo"
+                app:layout_constraintTop_toBottomOf="@+id/tvDtdailResCategoryInfo" />
+
+            <TextView
+                android:id="@+id/tvDetailResName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="餐廳：小資咖啡"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailArticleTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailArticleTitle" />
+
+            <TextView
+                android:id="@+id/tvDetailAvgCon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="平均消費：NT.150~450 /人 "
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailResName"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailResName" />
+
+            <TextView
+                android:id="@+id/tvArticleText"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="發文： 一下就足買一，吃的特典了感謝，可能是您的好像基本上要怎，要等想年月日。  轉一回文字，一有興本上今的我很好跟風，我先貴好微笑的兩，設認識。後面的真的很姐姐，打架是上我們終於麼你終於有⋯進入家有可：會聽起來經。我是最後麼感覺就開始希望你，多大，畢竟是好事活動壞掉停班令人，就不會他們為我吃。的不的時得這麼不要⋯三日果是等等不是我，接很喜歡會好好：十開始欸咦咦有的朋好多。  不要出手哈哈哈，上的黏土很難了還是，就只很難，超一天個禮的難過只有會不會。之下好了也怎麼辦⋯到以前大大總之只是準，一眼我其實，很帥也許也可以啊啊的感情。  個這樣就指家找到了。這樣來我小精，可愛的才是的噗，是單純我也要，久沒不行實人說。理一下可以方面喔喔喔，不在一邊終天真的高敏今天是然後我。的人不在要不要過這我看，錯字練到時候，是我覺停止該一爾摩斯關係我終於，到人所以多指教。就變成給人還是只其實我很喜歡，好意思麼想容好一點，不管是啊大出門婚，有到自己很可愛不過就。管理清楚沒有太⋯留下的故事就是不⋯死了樣都那裡重新旅行好，遲正面看完了樣子。好感度家都吧都好是任然要羨慕到，然沒有⋯想到的不收今日他很多⋯狐那就的手們就是但我哥是有人。"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailAvgCon"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailAvgCon" />
+
+            <ImageView
+                android:id="@+id/ivDetailGoodIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_baseline_thumb_up_24"
+                app:layout_constraintEnd_toStartOf="@+id/tvDetailCommentCount"
+                app:layout_constraintTop_toTopOf="@+id/tvDetailCommentCount" />
+
+            <TextView
+                android:id="@+id/tvDetailGoodCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="10"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/ivDetailGoodIcon"
+                app:layout_constraintTop_toTopOf="@+id/ivDetailGoodIcon" />
+
+            <ImageView
+                android:id="@+id/ivDetailArticleCommentIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_baseline_chat_bubble_24"
+                app:layout_constraintEnd_toStartOf="@+id/tvDetailFavoriteArticle"
+                app:layout_constraintTop_toTopOf="@+id/tvDetailFavoriteArticle" />
+
+            <TextView
+                android:id="@+id/tvDetailCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="10"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/ivDetailArticleCommentIcon"
+                app:layout_constraintTop_toTopOf="@+id/ivDetailArticleCommentIcon" />
+
+            <ImageView
+                android:id="@+id/ivDetailFavoriteIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_baseline_favorite_24"
+                app:layout_constraintBottom_toTopOf="@+id/tvArticleText"
+                app:layout_constraintEnd_toEndOf="@+id/tvArticleText" />
+
+            <TextView
+                android:id="@+id/tvDetailFavoriteArticle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="10"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/ivDetailFavoriteIcon"
+                app:layout_constraintTop_toTopOf="@+id/ivDetailFavoriteIcon" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvArticleImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:scrollbars="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/tvArticleText"
+                app:layout_constraintTop_toBottomOf="@+id/tvArticleText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvArticleText"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="@+id/tvArticleText"
+                app:layout_constraintTop_toBottomOf="@+id/rvArticleImage"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCommentBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="492dp"
+        android:background="@color/earthBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_supervised_user_circle_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="276dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="輸入留言"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCommentSend"
+            android:layout_width="48dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/button"
+            android:singleLine="true"
+            android:text="送出"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorText"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/etComment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

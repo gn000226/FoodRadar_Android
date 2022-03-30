@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="mainPink">#E56C69</color>
+    <color name="colorText">#FFF</color>
+    <color name="colorTextDark">#424242</color>
+    <color name="earthBackground">#F2F0EC</color>
+    <color name="mainBlue">#4599A6</color>
+    <color name="mainYellow">#EADDAB</color>
+    <color name="mainYellowLight">#F2F0EC</color>
+    <color name="colorTextHint">#AAAAAA</color>
+    <color name="mainLightBlue">#B5D8ED</color>
+    <color name="backgroundPink">#F2A0A0</color>
+    <color name="mainYellowMiddle">#FCEECD</color>
+
+</resources>

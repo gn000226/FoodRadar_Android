@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".user.ResUpdateFragment">
+
+
+
+
+        <ImageView
+            android:id="@+id/ivRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/no_image" />
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivRes">
+
+            <Button
+                android:id="@+id/btTakePicture"
+                style="@style/styleButton"
+                android:background="@drawable/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/textTakePicture" />
+
+            <Button
+                android:id="@+id/btPickPicture"
+                style="@style/styleButton"
+                android:background="@drawable/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/textPickPicture" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/textResName"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/ivRes"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <EditText
+            android:id="@+id/etResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/tvResName"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/tvResAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/textResAddress"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/ivRes"
+            app:layout_constraintTop_toBottomOf="@+id/tvResName" />
+
+        <EditText
+            android:id="@+id/etResAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/etResName"
+            app:layout_constraintTop_toBottomOf="@+id/etResName" />
+
+        <TextView
+            android:id="@+id/tvResTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/textResTel"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/ivRes"
+            app:layout_constraintTop_toBottomOf="@+id/tvResAddress" />
+
+        <EditText
+            android:id="@+id/etResTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/etResAddress"
+            app:layout_constraintTop_toBottomOf="@+id/etResAddress" />
+
+        <TextView
+            android:id="@+id/tvResHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/textResHours"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/ivRes"
+            app:layout_constraintTop_toBottomOf="@+id/tvResTel" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/tvResHours"
+            app:layout_constraintTop_toTopOf="@+id/tvResHours">
+
+            <TextView
+                android:id="@+id/tvMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/textMonday"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spMonStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArrayWithRest"
+                app:layout_constraintStart_toEndOf="@+id/tvMonday"
+                app:layout_constraintTop_toTopOf="@+id/tvMonday" />
+
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/spMonStartTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spMonEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                app:layout_constraintStart_toEndOf="@+id/tvTo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btMonAddHours"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/spMonEndTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btMonDeleteHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvMonday"
+                app:layout_constraintTop_toBottomOf="@+id/tvMonday" />
+
+            <Spinner
+                android:id="@+id/spMonStartTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btMonDeleteHours2"
+                app:layout_constraintTop_toTopOf="@+id/btMonDeleteHours2" />
+
+            <TextView
+                android:id="@+id/tvTo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spMonStartTime2"
+                app:layout_constraintTop_toTopOf="@+id/btMonDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spMonEndTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo2"
+                app:layout_constraintTop_toTopOf="@+id/btMonDeleteHours2" />
+
+            <Button
+                android:id="@+id/btMonAddHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spMonEndTime2"
+                app:layout_constraintTop_toTopOf="@+id/btMonDeleteHours2" />
+
+            <Button
+                android:id="@+id/btMonDeleteHours3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/btMonDeleteHours2"
+                app:layout_constraintTop_toBottomOf="@+id/btMonDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spMonStartTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btMonDeleteHours3"
+                app:layout_constraintTop_toTopOf="@+id/btMonDeleteHours3" />
+
+            <TextView
+                android:id="@+id/tvTo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spMonStartTime3"
+                app:layout_constraintTop_toTopOf="@+id/spMonStartTime3" />
+
+            <Spinner
+                android:id="@+id/spMonEndTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo3"
+                app:layout_constraintTop_toTopOf="@+id/btMonDeleteHours3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <TextView
+                android:id="@+id/tvTuesDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/textTuesDay"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spTueStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArrayWithRest"
+                app:layout_constraintStart_toEndOf="@+id/tvTuesDay"
+                app:layout_constraintTop_toTopOf="@+id/tvTuesDay" />
+
+            <TextView
+                android:id="@+id/tvTo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/spTueStartTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spTueEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                app:layout_constraintStart_toEndOf="@+id/tvTo4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btTueAddHours"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/spTueEndTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btTueDeleteHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvTuesDay"
+                app:layout_constraintTop_toBottomOf="@+id/tvTuesDay" />
+
+            <Spinner
+                android:id="@+id/spTueStartTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btTueDeleteHours2"
+                app:layout_constraintTop_toTopOf="@+id/btTueDeleteHours2" />
+
+            <TextView
+                android:id="@+id/tvTo5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spTueStartTime2"
+                app:layout_constraintTop_toTopOf="@+id/btTueDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spTueEndTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo5"
+                app:layout_constraintTop_toTopOf="@+id/btTueDeleteHours2" />
+
+            <Button
+                android:id="@+id/btTueAddHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spTueEndTime2"
+                app:layout_constraintTop_toTopOf="@+id/btTueDeleteHours2" />
+
+            <Button
+                android:id="@+id/btTueDeleteHours3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/btTueDeleteHours2"
+                app:layout_constraintTop_toBottomOf="@+id/btTueDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spTueStartTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btTueDeleteHours3"
+                app:layout_constraintTop_toTopOf="@+id/btTueDeleteHours3" />
+
+            <TextView
+                android:id="@+id/tvTo6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spTueStartTime3"
+                app:layout_constraintTop_toTopOf="@+id/spTueStartTime3" />
+
+            <Spinner
+                android:id="@+id/spTueEndTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo6"
+                app:layout_constraintTop_toTopOf="@+id/btTueDeleteHours3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--星期三-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <TextView
+                android:id="@+id/tvWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/textWednesday"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spWedStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArrayWithRest"
+                app:layout_constraintStart_toEndOf="@+id/tvWednesday"
+                app:layout_constraintTop_toTopOf="@+id/tvWednesday" />
+
+            <TextView
+                android:id="@+id/tvTo7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/spWedStartTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spWedEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                app:layout_constraintStart_toEndOf="@+id/tvTo7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btWedAddHours"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/spWedEndTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btWedDeleteHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvWednesday"
+                app:layout_constraintTop_toBottomOf="@+id/tvWednesday" />
+
+            <Spinner
+                android:id="@+id/spWedStartTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btWedDeleteHours2"
+                app:layout_constraintTop_toTopOf="@+id/btWedDeleteHours2" />
+
+            <TextView
+                android:id="@+id/tvTo8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spWedStartTime2"
+                app:layout_constraintTop_toTopOf="@+id/btWedDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spWedEndTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo8"
+                app:layout_constraintTop_toTopOf="@+id/btWedDeleteHours2" />
+
+            <Button
+                android:id="@+id/btWedAddHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spWedEndTime2"
+                app:layout_constraintTop_toTopOf="@+id/btWedDeleteHours2" />
+
+            <Button
+                android:id="@+id/btWedDeleteHours3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/btWedDeleteHours2"
+                app:layout_constraintTop_toBottomOf="@+id/btWedDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spWedStartTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btWedDeleteHours3"
+                app:layout_constraintTop_toTopOf="@+id/btWedDeleteHours3" />
+
+            <TextView
+                android:id="@+id/tvTo9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spWedStartTime3"
+                app:layout_constraintTop_toTopOf="@+id/spWedStartTime3" />
+
+            <Spinner
+                android:id="@+id/spWedEndTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo9"
+                app:layout_constraintTop_toTopOf="@+id/btWedDeleteHours3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--星期四-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+            <TextView
+                android:id="@+id/tvThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/textThursday"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spThuStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArrayWithRest"
+                app:layout_constraintStart_toEndOf="@+id/tvThursday"
+                app:layout_constraintTop_toTopOf="@+id/tvThursday" />
+
+            <TextView
+                android:id="@+id/tvTo10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/spThuStartTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spThuEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                app:layout_constraintStart_toEndOf="@+id/tvTo10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btThuAddHours"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/spThuEndTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btThuDeleteHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvThursday"
+                app:layout_constraintTop_toBottomOf="@+id/tvThursday" />
+
+            <Spinner
+                android:id="@+id/spThuStartTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btThuDeleteHours2"
+                app:layout_constraintTop_toTopOf="@+id/btThuDeleteHours2" />
+
+            <TextView
+                android:id="@+id/tvTo11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spThuStartTime2"
+                app:layout_constraintTop_toTopOf="@+id/btThuDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spThuEndTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo11"
+                app:layout_constraintTop_toTopOf="@+id/btThuDeleteHours2" />
+
+            <Button
+                android:id="@+id/btThuAddHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spThuEndTime2"
+                app:layout_constraintTop_toTopOf="@+id/btThuDeleteHours2" />
+
+            <Button
+                android:id="@+id/btThuDeleteHours3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/btThuDeleteHours2"
+                app:layout_constraintTop_toBottomOf="@+id/btThuDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spThuStartTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btThuDeleteHours3"
+                app:layout_constraintTop_toTopOf="@+id/btThuDeleteHours3" />
+
+            <TextView
+                android:id="@+id/tvTo12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spThuStartTime3"
+                app:layout_constraintTop_toTopOf="@+id/spThuStartTime3" />
+
+            <Spinner
+                android:id="@+id/spThuEndTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo12"
+                app:layout_constraintTop_toTopOf="@+id/btThuDeleteHours3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--星期五-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+            <TextView
+                android:id="@+id/tvFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/textFriday"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spFriStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArrayWithRest"
+                app:layout_constraintStart_toEndOf="@+id/tvFriday"
+                app:layout_constraintTop_toTopOf="@+id/tvFriday" />
+
+            <TextView
+                android:id="@+id/tvTo13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/spFriStartTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spFriEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                app:layout_constraintStart_toEndOf="@+id/tvTo13"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btFriAddHours"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/spFriEndTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btFriDeleteHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvFriday"
+                app:layout_constraintTop_toBottomOf="@+id/tvFriday" />
+
+            <Spinner
+                android:id="@+id/spFriStartTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btFriDeleteHours2"
+                app:layout_constraintTop_toTopOf="@+id/btFriDeleteHours2" />
+
+            <TextView
+                android:id="@+id/tvTo14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spFriStartTime2"
+                app:layout_constraintTop_toTopOf="@+id/btFriDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spFriEndTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo14"
+                app:layout_constraintTop_toTopOf="@+id/btFriDeleteHours2" />
+
+            <Button
+                android:id="@+id/btFriAddHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spFriEndTime2"
+                app:layout_constraintTop_toTopOf="@+id/btFriDeleteHours2" />
+
+            <Button
+                android:id="@+id/btFriDeleteHours3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/btFriDeleteHours2"
+                app:layout_constraintTop_toBottomOf="@+id/btFriDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spFriStartTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btFriDeleteHours3"
+                app:layout_constraintTop_toTopOf="@+id/btFriDeleteHours3" />
+
+            <TextView
+                android:id="@+id/tvTo15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spFriStartTime3"
+                app:layout_constraintTop_toTopOf="@+id/spFriStartTime3" />
+
+            <Spinner
+                android:id="@+id/spFriEndTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo15"
+                app:layout_constraintTop_toTopOf="@+id/btFriDeleteHours3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--星期六-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout6"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+            <TextView
+                android:id="@+id/tvSaturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/textSaturday"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spSatStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArrayWithRest"
+                app:layout_constraintStart_toEndOf="@+id/tvSaturday"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTo16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/spSatStartTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spSatEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                app:layout_constraintStart_toEndOf="@+id/tvTo16"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btSatAddHours"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/spSatEndTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btSatDeleteHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvSaturday"
+                app:layout_constraintTop_toBottomOf="@+id/tvSaturday" />
+
+            <Spinner
+                android:id="@+id/spSatStartTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btSatDeleteHours2"
+                app:layout_constraintTop_toTopOf="@+id/btSatDeleteHours2" />
+
+            <TextView
+                android:id="@+id/tvTo17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spSatStartTime2"
+                app:layout_constraintTop_toTopOf="@+id/btSatDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spSatEndTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo17"
+                app:layout_constraintTop_toTopOf="@+id/btSatDeleteHours2" />
+
+            <Button
+                android:id="@+id/btSatAddHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spSatEndTime2"
+                app:layout_constraintTop_toTopOf="@+id/btSatDeleteHours2" />
+
+            <Button
+                android:id="@+id/btSatDeleteHours3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/btSatDeleteHours2"
+                app:layout_constraintTop_toBottomOf="@+id/btSatDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spSatStartTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btSatDeleteHours3"
+                app:layout_constraintTop_toTopOf="@+id/btSatDeleteHours3" />
+
+            <TextView
+                android:id="@+id/tvTo18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spSatStartTime3"
+                app:layout_constraintTop_toTopOf="@+id/spSatStartTime3" />
+
+            <Spinner
+                android:id="@+id/spSatEndTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo18"
+                app:layout_constraintTop_toTopOf="@+id/btSatDeleteHours3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--星期天-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout7"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+            <TextView
+                android:id="@+id/tvSunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/textSunday"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spSunStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArrayWithRest"
+                app:layout_constraintStart_toEndOf="@+id/tvSunday"
+                app:layout_constraintTop_toTopOf="@+id/tvSunday" />
+
+            <TextView
+                android:id="@+id/tvTo19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/spSunStartTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spSunEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                app:layout_constraintStart_toEndOf="@+id/tvTo19"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btSunAddHours"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toEndOf="@+id/spSunEndTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btSunDeleteHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvSunday"
+                app:layout_constraintTop_toBottomOf="@+id/tvSunday" />
+
+            <Spinner
+                android:id="@+id/spSunStartTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btSunDeleteHours2"
+                app:layout_constraintTop_toTopOf="@+id/btSunDeleteHours2" />
+
+            <TextView
+                android:id="@+id/tvTo20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spSunStartTime2"
+                app:layout_constraintTop_toTopOf="@+id/btSunDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spSunEndTime2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo20"
+                app:layout_constraintTop_toTopOf="@+id/btSunDeleteHours2" />
+
+            <Button
+                android:id="@+id/btSunAddHours2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/button"
+                android:text="@string/textAdd"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spSunEndTime2"
+                app:layout_constraintTop_toTopOf="@+id/btSunDeleteHours2" />
+
+            <Button
+                android:id="@+id/btSunDeleteHours3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button"
+                android:text="@string/textDelete"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/btSunDeleteHours2"
+                app:layout_constraintTop_toBottomOf="@+id/btSunDeleteHours2" />
+
+            <Spinner
+                android:id="@+id/spSunStartTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/btSunDeleteHours3"
+                app:layout_constraintTop_toTopOf="@+id/btSunDeleteHours3" />
+
+            <TextView
+                android:id="@+id/tvTo21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textTo"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/spSunStartTime3"
+                app:layout_constraintTop_toTopOf="@+id/spSunStartTime3" />
+
+            <Spinner
+                android:id="@+id/spSunEndTime3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/textHoursArray"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvTo21"
+                app:layout_constraintTop_toTopOf="@+id/btSunDeleteHours3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvResCategoryInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/textResCategory"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/ivRes"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/tvResCategoryInfo"
+            app:layout_constraintTop_toTopOf="@+id/tvResCategoryInfo" />
+
+        <TextView
+            android:id="@+id/tvResEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/textResEnable"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/ivRes"
+            app:layout_constraintTop_toBottomOf="@+id/tvResCategoryInfo" />
+
+
+        <Switch
+            android:id="@+id/swResEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:checked="false"
+            android:showText="false"
+            android:splitTrack="false"
+            android:text="@string/textResIsNotEnable"
+            android:textOff="@string/textResIsNotEnable"
+            android:textOn="@string/textResIsEnable"
+            app:layout_constraintStart_toEndOf="@+id/tvResEnable"
+            app:layout_constraintTop_toBottomOf="@+id/spCategory" />
+
+        <Button
+            android:id="@+id/btUpdate"
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:text="@string/textUpdate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCancel"
+            app:layout_constraintTop_toBottomOf="@+id/swResEnable" />
+
+        <Button
+            android:id="@+id/btCancel"
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button"
+            android:text="@string/textUpdateCancel"
+            app:layout_constraintBottom_toBottomOf="@+id/btUpdate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btUpdate" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

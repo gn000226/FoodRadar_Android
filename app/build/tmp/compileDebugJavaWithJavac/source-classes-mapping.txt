@@ -1,0 +1,411 @@
+com/example/foodradar_android/user/UserAccountAvatra.java
+ com.example.foodradar_android.user.UserAccountAvatra
+com/example/foodradar_android/article/Article.java
+ com.example.foodradar_android.article.Article
+com/example/foodradar_android/main/CategoryFragment.java
+ com.example.foodradar_android.main.CategoryFragment
+ com.example.foodradar_android.main.CategoryFragment$1
+ com.example.foodradar_android.main.CategoryFragment$2
+ com.example.foodradar_android.main.CategoryFragment$CategoryAdapter
+ com.example.foodradar_android.main.CategoryFragment$CategoryAdapter$1
+ com.example.foodradar_android.main.CategoryFragment$CategoryAdapter$MyViewHolder
+com/example/foodradar_android/res/ResRatingActivity.java
+ com.example.foodradar_android.res.ResRatingActivity
+ com.example.foodradar_android.res.ResRatingActivity$1
+com/example/foodradar_android/article/ArticleImageTask.java
+ com.example.foodradar_android.article.ArticleImageTask
+com/example/foodradar_android/user/UserSysSetupFragment.java
+ com.example.foodradar_android.user.UserSysSetupFragment
+ com.example.foodradar_android.user.UserSysSetupFragment$1
+com/example/foodradar_android/user/MyRes.java
+ com.example.foodradar_android.user.MyRes
+com/example/foodradar_android/res/ResRating.java
+ com.example.foodradar_android.res.ResRating
+com/example/foodradar_android/article/ArticleGood.java
+ com.example.foodradar_android.article.ArticleGood
+com/example/foodradar_android/coupon/Coupon.java
+ com.example.foodradar_android.coupon.Coupon
+com/example/foodradar_android/main/LoginFragment.java
+ com.example.foodradar_android.main.LoginFragment
+ com.example.foodradar_android.main.LoginFragment$1
+ com.example.foodradar_android.main.LoginFragment$2
+ com.example.foodradar_android.main.LoginFragment$3
+ com.example.foodradar_android.main.LoginFragment$4
+ com.example.foodradar_android.main.LoginFragment$ProcModeEnum
+com/example/foodradar_android/res/ResListFragmentDirections.java
+ com.example.foodradar_android.res.ResListFragmentDirections
+com/example/foodradar_android/user/ResInsertFragment.java
+ com.example.foodradar_android.user.ResInsertFragment
+ com.example.foodradar_android.user.ResInsertFragment$1
+ com.example.foodradar_android.user.ResInsertFragment$10
+ com.example.foodradar_android.user.ResInsertFragment$11
+ com.example.foodradar_android.user.ResInsertFragment$12
+ com.example.foodradar_android.user.ResInsertFragment$13
+ com.example.foodradar_android.user.ResInsertFragment$2
+ com.example.foodradar_android.user.ResInsertFragment$3
+ com.example.foodradar_android.user.ResInsertFragment$4
+ com.example.foodradar_android.user.ResInsertFragment$5
+ com.example.foodradar_android.user.ResInsertFragment$6
+ com.example.foodradar_android.user.ResInsertFragment$7
+ com.example.foodradar_android.user.ResInsertFragment$8
+ com.example.foodradar_android.user.ResInsertFragment$9
+com/example/foodradar_android/coupon/CouponEditFragment.java
+ com.example.foodradar_android.coupon.CouponEditFragment
+ com.example.foodradar_android.coupon.CouponEditFragment$1
+ com.example.foodradar_android.coupon.CouponEditFragment$2
+ com.example.foodradar_android.coupon.CouponEditFragment$3
+ com.example.foodradar_android.coupon.CouponEditFragment$4
+ com.example.foodradar_android.coupon.CouponEditFragment$CouponEditAdapter
+ com.example.foodradar_android.coupon.CouponEditFragment$CouponEditAdapter$1
+ com.example.foodradar_android.coupon.CouponEditFragment$CouponEditAdapter$1$1
+ com.example.foodradar_android.coupon.CouponEditFragment$CouponEditAdapter$MyViewHolder
+com/example/foodradar_android/article/InsertImageFragment.java
+ com.example.foodradar_android.article.InsertImageFragment
+com/example/foodradar_android/res/ResListFragment.java
+ com.example.foodradar_android.res.ResListFragment
+ com.example.foodradar_android.res.ResListFragment$1
+ com.example.foodradar_android.res.ResListFragment$2
+ com.example.foodradar_android.res.ResListFragment$3
+ com.example.foodradar_android.res.ResListFragment$4
+ com.example.foodradar_android.res.ResListFragment$5
+ com.example.foodradar_android.res.ResListFragment$6
+ com.example.foodradar_android.res.ResListFragment$7
+ com.example.foodradar_android.res.ResListFragment$ResAdapter
+ com.example.foodradar_android.res.ResListFragment$ResAdapter$1
+ com.example.foodradar_android.res.ResListFragment$ResAdapter$2
+ com.example.foodradar_android.res.ResListFragment$ResAdapter$MyViewHolder
+com/example/foodradar_android/main/Register_Fragment.java
+ com.example.foodradar_android.main.Register_Fragment
+ com.example.foodradar_android.main.Register_Fragment$1
+ com.example.foodradar_android.main.Register_Fragment$2
+ com.example.foodradar_android.main.Register_Fragment$3
+com/example/foodradar_android/res/ResMapFragment.java
+ com.example.foodradar_android.res.ResMapFragment
+ com.example.foodradar_android.res.ResMapFragment$1
+ com.example.foodradar_android.res.ResMapFragment$10
+ com.example.foodradar_android.res.ResMapFragment$10$1
+ com.example.foodradar_android.res.ResMapFragment$2
+ com.example.foodradar_android.res.ResMapFragment$3
+ com.example.foodradar_android.res.ResMapFragment$4
+ com.example.foodradar_android.res.ResMapFragment$5
+ com.example.foodradar_android.res.ResMapFragment$5$1
+ com.example.foodradar_android.res.ResMapFragment$5$2
+ com.example.foodradar_android.res.ResMapFragment$6
+ com.example.foodradar_android.res.ResMapFragment$7
+ com.example.foodradar_android.res.ResMapFragment$7$1
+ com.example.foodradar_android.res.ResMapFragment$8
+ com.example.foodradar_android.res.ResMapFragment$9
+ com.example.foodradar_android.res.ResMapFragment$ResAdapter
+ com.example.foodradar_android.res.ResMapFragment$ResAdapter$1
+ com.example.foodradar_android.res.ResMapFragment$ResAdapter$2
+ com.example.foodradar_android.res.ResMapFragment$ResAdapter$MyViewHolder
+com/example/foodradar_android/user/ResInsertFragmentDirections.java
+ com.example.foodradar_android.user.ResInsertFragmentDirections
+com/example/foodradar_android/article/ArticleFragmentDirections.java
+ com.example.foodradar_android.article.ArticleFragmentDirections
+com/example/foodradar_android/task/ImageTask.java
+ com.example.foodradar_android.task.ImageTask
+com/example/foodradar_android/article/ArticleInsertFragmentDirections.java
+ com.example.foodradar_android.article.ArticleInsertFragmentDirections
+com/example/foodradar_android/main/Category.java
+ com.example.foodradar_android.main.Category
+com/example/foodradar_android/coupon/CouponDetailFragment.java
+ com.example.foodradar_android.coupon.CouponDetailFragment
+ com.example.foodradar_android.coupon.CouponDetailFragment$1
+com/example/foodradar_android/user/UserMyResFragmentDirections.java
+ com.example.foodradar_android.user.UserMyResFragmentDirections
+com/example/foodradar_android/article/ArticleDetailFragment.java
+ com.example.foodradar_android.article.ArticleDetailFragment
+ com.example.foodradar_android.article.ArticleDetailFragment$1
+ com.example.foodradar_android.article.ArticleDetailFragment$2
+ com.example.foodradar_android.article.ArticleDetailFragment$2$1
+ com.example.foodradar_android.article.ArticleDetailFragment$2$2
+ com.example.foodradar_android.article.ArticleDetailFragment$3
+ com.example.foodradar_android.article.ArticleDetailFragment$4
+ com.example.foodradar_android.article.ArticleDetailFragment$5
+ com.example.foodradar_android.article.ArticleDetailFragment$CommentAdapter
+ com.example.foodradar_android.article.ArticleDetailFragment$CommentAdapter$1
+ com.example.foodradar_android.article.ArticleDetailFragment$CommentAdapter$2
+ com.example.foodradar_android.article.ArticleDetailFragment$CommentAdapter$MyViewHolder
+ com.example.foodradar_android.article.ArticleDetailFragment$ImgAdpter
+ com.example.foodradar_android.article.ArticleDetailFragment$ImgAdpter$1
+ com.example.foodradar_android.article.ArticleDetailFragment$ImgAdpter$MyViewHolder
+com/example/foodradar_android/MyFCMService.java
+ com.example.foodradar_android.MyFCMService
+com/example/foodradar_android/user/MyArticle.java
+ com.example.foodradar_android.user.MyArticle
+com/example/foodradar_android/WelcomeFragment.java
+ com.example.foodradar_android.WelcomeFragment
+com/example/foodradar_android/article/ArticleUpdateFragment.java
+ com.example.foodradar_android.article.ArticleUpdateFragment
+ com.example.foodradar_android.article.ArticleUpdateFragment$1
+ com.example.foodradar_android.article.ArticleUpdateFragment$ImgAdapter
+ com.example.foodradar_android.article.ArticleUpdateFragment$ImgAdapter$1
+ com.example.foodradar_android.article.ArticleUpdateFragment$ImgAdapter$1$1
+ com.example.foodradar_android.article.ArticleUpdateFragment$ImgAdapter$1$2
+ com.example.foodradar_android.article.ArticleUpdateFragment$ImgAdapter$MyViewHolder
+ com.example.foodradar_android.article.ArticleUpdateFragment$UpdateAdapter
+ com.example.foodradar_android.article.ArticleUpdateFragment$UpdateAdapter$1
+ com.example.foodradar_android.article.ArticleUpdateFragment$UpdateAdapter$1$1
+ com.example.foodradar_android.article.ArticleUpdateFragment$UpdateAdapter$MyViewHolder
+ com.example.foodradar_android.article.ArticleUpdateFragment$UpdateAdapter$PickViewHolder
+com/example/foodradar_android/res/Res.java
+ com.example.foodradar_android.res.Res
+com/example/foodradar_android/user/UserMyArticleFragment.java
+ com.example.foodradar_android.user.UserMyArticleFragment
+ com.example.foodradar_android.user.UserMyArticleFragment$1
+ com.example.foodradar_android.user.UserMyArticleFragment$2
+ com.example.foodradar_android.user.UserMyArticleFragment$3
+ com.example.foodradar_android.user.UserMyArticleFragment$MyArticleAdapter
+ com.example.foodradar_android.user.UserMyArticleFragment$MyArticleAdapter$1
+ com.example.foodradar_android.user.UserMyArticleFragment$MyArticleAdapter$MyViewHolder
+com/example/foodradar_android/user/ResMaintainFragmentDirections.java
+ com.example.foodradar_android.user.ResMaintainFragmentDirections
+com/example/foodradar_android/article/ArticleDetailFragmentDirections.java
+ com.example.foodradar_android.article.ArticleDetailFragmentDirections
+com/example/foodradar_android/WelcomeActivity.java
+ com.example.foodradar_android.WelcomeActivity
+ com.example.foodradar_android.WelcomeActivity$1
+com/example/foodradar_android/user/UserMyCouponFragment.java
+ com.example.foodradar_android.user.UserMyCouponFragment
+ com.example.foodradar_android.user.UserMyCouponFragment$1
+ com.example.foodradar_android.user.UserMyCouponFragment$MyCouponAdapter
+ com.example.foodradar_android.user.UserMyCouponFragment$MyCouponAdapter$1
+ com.example.foodradar_android.user.UserMyCouponFragment$MyCouponAdapter$MyViewHolder
+com/example/foodradar_android/Common.java
+ com.example.foodradar_android.Common
+ com.example.foodradar_android.Common$1
+com/example/foodradar_android/coupon/CouponMaintainFragmentDirections.java
+ com.example.foodradar_android.coupon.CouponMaintainFragmentDirections
+com/example/foodradar_android/user/UserAreaFragmentDirections.java
+ com.example.foodradar_android.user.UserAreaFragmentDirections
+com/example/foodradar_android/article/ResAddressFragmentDirections.java
+ com.example.foodradar_android.article.ResAddressFragmentDirections
+com/example/foodradar_android/user/UserImageTask.java
+ com.example.foodradar_android.user.UserImageTask
+com/example/foodradar_android/article/ArticleInsertFragment.java
+ com.example.foodradar_android.article.ArticleInsertFragment
+ com.example.foodradar_android.article.ArticleInsertFragment$1
+ com.example.foodradar_android.article.ArticleInsertFragment$ImgAdpter
+ com.example.foodradar_android.article.ArticleInsertFragment$ImgAdpter$1
+ com.example.foodradar_android.article.ArticleInsertFragment$ImgAdpter$1$1
+ com.example.foodradar_android.article.ArticleInsertFragment$ImgAdpter$MyViewHolder
+ com.example.foodradar_android.article.ArticleInsertFragment$ImgAdpter$PickViewHolder
+com/example/foodradar_android/article/NewArticleFragmentDirections.java
+ com.example.foodradar_android.article.NewArticleFragmentDirections
+com/example/foodradar_android/article/ResAddressFragment.java
+ com.example.foodradar_android.article.ResAddressFragment
+ com.example.foodradar_android.article.ResAddressFragment$1
+ com.example.foodradar_android.article.ResAddressFragment$2
+ com.example.foodradar_android.article.ResAddressFragment$ResAddressAdapter
+ com.example.foodradar_android.article.ResAddressFragment$ResAddressAdapter$1
+ com.example.foodradar_android.article.ResAddressFragment$ResAddressAdapter$MyViewHolder
+com/example/foodradar_android/article/RankArticleFragmentDirections.java
+ com.example.foodradar_android.article.RankArticleFragmentDirections
+com/example/foodradar_android/article/Img.java
+ com.example.foodradar_android.article.Img
+com/example/foodradar_android/user/UserAreaFragment.java
+ com.example.foodradar_android.user.UserAreaFragment
+com/example/foodradar_android/main/Category_Detail_Fragment.java
+ com.example.foodradar_android.main.Category_Detail_Fragment
+ com.example.foodradar_android.main.Category_Detail_Fragment$1
+com/example/foodradar_android/res/ResImgFragment.java
+ com.example.foodradar_android.res.ResImgFragment
+ com.example.foodradar_android.res.ResImgFragment$1
+ com.example.foodradar_android.res.ResImgFragment$ImgAdapter
+ com.example.foodradar_android.res.ResImgFragment$ImgAdapter$MyViewHolder
+com/example/foodradar_android/article/ArticleUpdateFragmentDirections.java
+ com.example.foodradar_android.article.ArticleUpdateFragmentDirections
+com/example/foodradar_android/user/UserAccount.java
+ com.example.foodradar_android.user.UserAccount
+com/example/foodradar_android/user/UserManagementFragment.java
+ com.example.foodradar_android.user.UserManagementFragment
+ com.example.foodradar_android.user.UserManagementFragment$1
+ com.example.foodradar_android.user.UserManagementFragment$2
+ com.example.foodradar_android.user.UserManagementFragment$3
+ com.example.foodradar_android.user.UserManagementFragment$UserAccountAdapter
+ com.example.foodradar_android.user.UserManagementFragment$UserAccountAdapter$1
+ com.example.foodradar_android.user.UserManagementFragment$UserAccountAdapter$MyViewHolder
+com/example/foodradar_android/article/NewArticleFragment.java
+ com.example.foodradar_android.article.NewArticleFragment
+ com.example.foodradar_android.article.NewArticleFragment$1
+ com.example.foodradar_android.article.NewArticleFragment$2
+ com.example.foodradar_android.article.NewArticleFragment$3
+ com.example.foodradar_android.article.NewArticleFragment$ArticleAdapter
+ com.example.foodradar_android.article.NewArticleFragment$ArticleAdapter$1
+ com.example.foodradar_android.article.NewArticleFragment$ArticleAdapter$MyViewHolder
+com/example/foodradar_android/coupon/CouponFragment.java
+ com.example.foodradar_android.coupon.CouponFragment
+ com.example.foodradar_android.coupon.CouponFragment$1
+ com.example.foodradar_android.coupon.CouponFragment$2
+ com.example.foodradar_android.coupon.CouponFragment$3
+ com.example.foodradar_android.coupon.CouponFragment$4
+ com.example.foodradar_android.coupon.CouponFragment$CouactAdapter
+ com.example.foodradar_android.coupon.CouponFragment$CouactAdapter$1
+ com.example.foodradar_android.coupon.CouponFragment$CouactAdapter$MyViewHolder
+ com.example.foodradar_android.coupon.CouponFragment$CouponAdapter
+ com.example.foodradar_android.coupon.CouponFragment$CouponAdapter$1
+ com.example.foodradar_android.coupon.CouponFragment$CouponAdapter$MyViewHolder
+com/example/foodradar_android/main/CategoryTypeFragment.java
+ com.example.foodradar_android.main.CategoryTypeFragment
+ com.example.foodradar_android.main.CategoryTypeFragment$1
+ com.example.foodradar_android.main.CategoryTypeFragment$2
+ com.example.foodradar_android.main.CategoryTypeFragment$ResAdapter
+ com.example.foodradar_android.main.CategoryTypeFragment$ResAdapter$1
+ com.example.foodradar_android.main.CategoryTypeFragment$ResAdapter$1$1
+ com.example.foodradar_android.main.CategoryTypeFragment$ResAdapter$1$2
+ com.example.foodradar_android.main.CategoryTypeFragment$ResAdapter$1$3
+ com.example.foodradar_android.main.CategoryTypeFragment$ResAdapter$MyViewHolder
+com/example/foodradar_android/user/ResUpdateFragment.java
+ com.example.foodradar_android.user.ResUpdateFragment
+ com.example.foodradar_android.user.ResUpdateFragment$1
+ com.example.foodradar_android.user.ResUpdateFragment$10
+ com.example.foodradar_android.user.ResUpdateFragment$11
+ com.example.foodradar_android.user.ResUpdateFragment$12
+ com.example.foodradar_android.user.ResUpdateFragment$13
+ com.example.foodradar_android.user.ResUpdateFragment$2
+ com.example.foodradar_android.user.ResUpdateFragment$3
+ com.example.foodradar_android.user.ResUpdateFragment$4
+ com.example.foodradar_android.user.ResUpdateFragment$5
+ com.example.foodradar_android.user.ResUpdateFragment$6
+ com.example.foodradar_android.user.ResUpdateFragment$7
+ com.example.foodradar_android.user.ResUpdateFragment$8
+ com.example.foodradar_android.user.ResUpdateFragment$9
+com/example/foodradar_android/article/ResAddress.java
+ com.example.foodradar_android.article.ResAddress
+com/example/foodradar_android/article/Comment.java
+ com.example.foodradar_android.article.Comment
+com/example/foodradar_android/main/MainActivity.java
+ com.example.foodradar_android.main.MainActivity
+com/example/foodradar_android/BuildConfig.java
+ com.example.foodradar_android.BuildConfig
+com/example/foodradar_android/user/ResMaintainFragment.java
+ com.example.foodradar_android.user.ResMaintainFragment
+ com.example.foodradar_android.user.ResMaintainFragment$1
+ com.example.foodradar_android.user.ResMaintainFragment$2
+ com.example.foodradar_android.user.ResMaintainFragment$3
+ com.example.foodradar_android.user.ResMaintainFragment$ResAdapter
+ com.example.foodradar_android.user.ResMaintainFragment$ResAdapter$1
+ com.example.foodradar_android.user.ResMaintainFragment$ResAdapter$2
+ com.example.foodradar_android.user.ResMaintainFragment$ResAdapter$3
+ com.example.foodradar_android.user.ResMaintainFragment$ResAdapter$3$1
+ com.example.foodradar_android.user.ResMaintainFragment$ResAdapter$MyViewHolder
+com/example/foodradar_android/article/ArticleFragment.java
+ com.example.foodradar_android.article.ArticleFragment
+com/example/foodradar_android/user/MyCoupon.java
+ com.example.foodradar_android.user.MyCoupon
+com/example/foodradar_android/user/UserDataSetupFragment.java
+ com.example.foodradar_android.user.UserDataSetupFragment
+ com.example.foodradar_android.user.UserDataSetupFragment$1
+ com.example.foodradar_android.user.UserDataSetupFragment$10
+ com.example.foodradar_android.user.UserDataSetupFragment$2
+ com.example.foodradar_android.user.UserDataSetupFragment$3
+ com.example.foodradar_android.user.UserDataSetupFragment$4
+ com.example.foodradar_android.user.UserDataSetupFragment$5
+ com.example.foodradar_android.user.UserDataSetupFragment$6
+ com.example.foodradar_android.user.UserDataSetupFragment$7
+ com.example.foodradar_android.user.UserDataSetupFragment$8
+ com.example.foodradar_android.user.UserDataSetupFragment$9
+ com.example.foodradar_android.user.UserDataSetupFragment$ProcModeEnum
+com/example/foodradar_android/coupon/CouponUpdataFragment.java
+ com.example.foodradar_android.coupon.CouponUpdataFragment
+ com.example.foodradar_android.coupon.CouponUpdataFragment$1
+ com.example.foodradar_android.coupon.CouponUpdataFragment$2
+ com.example.foodradar_android.coupon.CouponUpdataFragment$3
+ com.example.foodradar_android.coupon.CouponUpdataFragment$4
+ com.example.foodradar_android.coupon.CouponUpdataFragment$5
+ com.example.foodradar_android.coupon.CouponUpdataFragment$6
+ com.example.foodradar_android.coupon.CouponUpdataFragment$7
+com/example/foodradar_android/main/CategoryTypeFragmentDirections.java
+ com.example.foodradar_android.main.CategoryTypeFragmentDirections
+com/example/foodradar_android/res/ResDetailFragment.java
+ com.example.foodradar_android.res.ResDetailFragment
+ com.example.foodradar_android.res.ResDetailFragment$1
+ com.example.foodradar_android.res.ResDetailFragment$2
+ com.example.foodradar_android.res.ResDetailFragment$3
+ com.example.foodradar_android.res.ResDetailFragment$4
+ com.example.foodradar_android.res.ResDetailFragment$5
+ com.example.foodradar_android.res.ResDetailFragment$6
+ com.example.foodradar_android.res.ResDetailFragment$7
+ com.example.foodradar_android.res.ResDetailFragment$ImgAdapter
+ com.example.foodradar_android.res.ResDetailFragment$ImgAdapter$MyViewHolder
+com/example/foodradar_android/res/ResDetailFragmentDirections.java
+ com.example.foodradar_android.res.ResDetailFragmentDirections
+com/example/foodradar_android/FcmFragment.java
+ com.example.foodradar_android.FcmFragment
+ com.example.foodradar_android.FcmFragment$1
+ com.example.foodradar_android.FcmFragment$2
+ com.example.foodradar_android.FcmFragment$3
+com/example/foodradar_android/coupon/CouponFragmentDirections.java
+ com.example.foodradar_android.coupon.CouponFragmentDirections
+com/example/foodradar_android/main/CategoryFragmentDirections.java
+ com.example.foodradar_android.main.CategoryFragmentDirections
+com/example/foodradar_android/user/ArticleManagementFragment.java
+ com.example.foodradar_android.user.ArticleManagementFragment
+ com.example.foodradar_android.user.ArticleManagementFragment$1
+ com.example.foodradar_android.user.ArticleManagementFragment$2
+ com.example.foodradar_android.user.ArticleManagementFragment$3
+ com.example.foodradar_android.user.ArticleManagementFragment$4
+ com.example.foodradar_android.user.ArticleManagementFragment$5
+ com.example.foodradar_android.user.ArticleManagementFragment$6
+ com.example.foodradar_android.user.ArticleManagementFragment$7
+ com.example.foodradar_android.user.ArticleManagementFragment$8
+ com.example.foodradar_android.user.ArticleManagementFragment$9
+ com.example.foodradar_android.user.ArticleManagementFragment$MyArticleAdapter
+ com.example.foodradar_android.user.ArticleManagementFragment$MyArticleAdapter$1
+ com.example.foodradar_android.user.ArticleManagementFragment$MyArticleAdapter$2
+ com.example.foodradar_android.user.ArticleManagementFragment$MyArticleAdapter$3
+ com.example.foodradar_android.user.ArticleManagementFragment$MyArticleAdapter$4
+ com.example.foodradar_android.user.ArticleManagementFragment$MyArticleAdapter$MyViewHolder
+com/example/foodradar_android/article/RankArticleFragment.java
+ com.example.foodradar_android.article.RankArticleFragment
+ com.example.foodradar_android.article.RankArticleFragment$1
+ com.example.foodradar_android.article.RankArticleFragment$2
+ com.example.foodradar_android.article.RankArticleFragment$ArticleAdapter
+ com.example.foodradar_android.article.RankArticleFragment$ArticleAdapter$1
+ com.example.foodradar_android.article.RankArticleFragment$ArticleAdapter$MyViewHolder
+com/example/foodradar_android/coupon/CouponMaintainFragment.java
+ com.example.foodradar_android.coupon.CouponMaintainFragment
+ com.example.foodradar_android.coupon.CouponMaintainFragment$1
+ com.example.foodradar_android.coupon.CouponMaintainFragment$2
+ com.example.foodradar_android.coupon.CouponMaintainFragment$2$1
+ com.example.foodradar_android.coupon.CouponMaintainFragment$3
+ com.example.foodradar_android.coupon.CouponMaintainFragment$4
+ com.example.foodradar_android.coupon.CouponMaintainFragment$5
+ com.example.foodradar_android.coupon.CouponMaintainFragment$6
+ com.example.foodradar_android.coupon.CouponMaintainFragment$7
+ com.example.foodradar_android.coupon.CouponMaintainFragment$8
+com/example/foodradar_android/user/UserMyCouponFragmentDirections.java
+ com.example.foodradar_android.user.UserMyCouponFragmentDirections
+com/example/foodradar_android/coupon/CouponEditFragmentDirections.java
+ com.example.foodradar_android.coupon.CouponEditFragmentDirections
+com/example/foodradar_android/article/FavoriteArticleFragment.java
+ com.example.foodradar_android.article.FavoriteArticleFragment
+ com.example.foodradar_android.article.FavoriteArticleFragment$1
+ com.example.foodradar_android.article.FavoriteArticleFragment$2
+ com.example.foodradar_android.article.FavoriteArticleFragment$ArticleAdapter
+ com.example.foodradar_android.article.FavoriteArticleFragment$ArticleAdapter$1
+ com.example.foodradar_android.article.FavoriteArticleFragment$ArticleAdapter$MyViewHolder
+com/example/foodradar_android/user/UserMyResFragment.java
+ com.example.foodradar_android.user.UserMyResFragment
+ com.example.foodradar_android.user.UserMyResFragment$1
+ com.example.foodradar_android.user.UserMyResFragment$2
+ com.example.foodradar_android.user.UserMyResFragment$3
+ com.example.foodradar_android.user.UserMyResFragment$MyResAdapter
+ com.example.foodradar_android.user.UserMyResFragment$MyResAdapter$1
+ com.example.foodradar_android.user.UserMyResFragment$MyResAdapter$1$1
+ com.example.foodradar_android.user.UserMyResFragment$MyResAdapter$MyViewHolder
+com/example/foodradar_android/article/CommentGood.java
+ com.example.foodradar_android.article.CommentGood
+com/example/foodradar_android/coupon/CouponUpdataFragmentDirections.java
+ com.example.foodradar_android.coupon.CouponUpdataFragmentDirections
+com/example/foodradar_android/user/UserSysSetupFragmentDirections.java
+ com.example.foodradar_android.user.UserSysSetupFragmentDirections
+com/example/foodradar_android/task/CommonTask.java
+ com.example.foodradar_android.task.CommonTask
+com/example/foodradar_android/res/ResMapFragmentDirections.java
+ com.example.foodradar_android.res.ResMapFragmentDirections
+com/example/foodradar_android/article/FavoriteArticleFragmentDirections.java
+ com.example.foodradar_android.article.FavoriteArticleFragmentDirections
+com/example/foodradar_android/main/LoginFragmentDirections.java
+ com.example.foodradar_android.main.LoginFragmentDirections

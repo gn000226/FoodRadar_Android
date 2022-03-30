@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".article.ArticleInsertFragment">
+
+    <EditText
+        android:id="@+id/etConNum"
+        android:layout_width="92dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/edit_text_line"
+        android:ems="10"
+        android:hint="消費人數"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etConAmount"
+        android:layout_width="92dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="48dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/edit_text_line"
+        android:ems="10"
+        android:hint="消費金額 (NT)"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/etConNum"
+        app:layout_constraintTop_toTopOf="@+id/etConNum" />
+
+    <ImageView
+        android:id="@+id/ivPlaceIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_baseline_place_24"
+        app:itemIconTint="@color/mainPink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etConAmount"
+        app:tint="@color/mainBlue" />
+
+    <EditText
+        android:id="@+id/etArticleTitle"
+        android:layout_width="372dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:drawableBottom="@drawable/edit_text_line"
+        android:ems="10"
+        android:hint="輸入文章主題"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etConNum" />
+
+    <TextView
+        android:id="@+id/tvResName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="1111111"
+        app:layout_constraintStart_toStartOf="@+id/etArticleTitle"
+        app:layout_constraintTop_toBottomOf="@+id/etArticleTitle" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintStart_toStartOf="@+id/tvResName"
+        app:layout_constraintTop_toBottomOf="@+id/tvResName">
+
+        <EditText
+            android:id="@+id/etArticleText"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/article_insert_text"
+            android:gravity="top|left"
+            android:hint="請輸入內文"
+            android:inputType="textMultiLine"
+            android:textSize="12sp" />
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInsertImage"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/tvPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:text="人"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/etConNum"
+        app:layout_constraintTop_toTopOf="@+id/etConNum" />
+
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:text="元"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/etConAmount"
+        app:layout_constraintTop_toTopOf="@+id/etConAmount" />
+
+    <Button
+        android:id="@+id/strButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_for_user_area_menu"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvMoney"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

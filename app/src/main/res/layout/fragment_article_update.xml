@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".article.ArticleUpdateFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etConAmountUpdate"
+                android:layout_width="92dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/edit_text_line"
+                android:ems="10"
+                android:hint="消費金額(NT)"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/tvPeople"
+                app:layout_constraintTop_toTopOf="@+id/tvPeople" />
+
+            <ScrollView
+                android:id="@+id/scrollViewUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:layout_marginTop="12dp"
+                android:fillViewport="true"
+                app:layout_constraintStart_toStartOf="@+id/tvResNameUpdate"
+                app:layout_constraintTop_toBottomOf="@+id/tvResNameUpdate">
+
+                <EditText
+                    android:id="@+id/etArticleTextUpdate"
+                    android:layout_width="380dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/article_insert_text"
+                    android:gravity="top|left"
+                    android:hint="請輸入內文"
+                    android:inputType="textMultiLine"
+                    android:textSize="12sp" />
+
+            </ScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDefaultImage"
+                android:layout_width="380dp"
+                android:layout_height="270dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollViewUpdate" />
+
+            <TextView
+                android:id="@+id/tvPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:text="人"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/etConNumUpdate"
+                app:layout_constraintTop_toTopOf="@+id/etConNumUpdate" />
+
+            <TextView
+                android:id="@+id/tvMoneyUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:text="元"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/etConAmountUpdate"
+                app:layout_constraintTop_toTopOf="@+id/etConAmountUpdate" />
+
+            <EditText
+                android:id="@+id/etConNumUpdate"
+                android:layout_width="92dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/edit_text_line"
+                android:ems="10"
+                android:hint="消費人數"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvResNameUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="找餐廳"
+                app:layout_constraintStart_toStartOf="@+id/etArticleTitleUpdate"
+                app:layout_constraintTop_toBottomOf="@+id/etArticleTitleUpdate" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUpdateImage"
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/mainYellowLight"
+                android:paddingBottom="2dp"
+                android:scrollbars="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvDefaultImage" />
+
+            <EditText
+                android:id="@+id/etArticleTitleUpdate"
+                android:layout_width="372dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/edit_text_line"
+                android:ems="10"
+                android:hint="輸入文章主題"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/etConNumUpdate"
+                app:layout_constraintTop_toBottomOf="@+id/etConNumUpdate" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

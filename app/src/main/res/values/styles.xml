@@ -1,0 +1,68 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--使用ActionBarMenu文字尺寸-->
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainPink</item>
+        <item name="colorPrimaryDark">@color/colorTextDark</item>
+        <item name="colorAccent">@color/colorTextDark</item>
+        <!--appBar返回鍵icon-->
+<!--        <item name="navigationIcon">@drawable/ic_baseline_arrow_back_24</item>-->
+        <!--Title文字顏色-->
+        <item name="titleTextColor">@color/colorTextDark</item>
+        <!--ActionBarMenu文字顏色-->
+        <item name="actionMenuTextColor">@color/colorTextDark</item>
+    </style>
+
+    <!--定義ActionBarMenu文字尺寸-->
+    <style name="MenuTextStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- EditText Hint顏色的 Theme -->
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorTextHint</item>
+<!--        <item name="colorAccent">@android:color/white</item>-->
+<!--        <item name="android:textColorHint">@color/BackgroundtWhiteColor</item>-->
+<!--        <item name="colorControlNormal">@color/BackgroundtWhiteColor</item>-->
+<!--        <item name="colorControlActivated">@color/your color</item>-->
+<!--        <item name="colorControlHighlight">@color/BackgroundtWhiteColor</item>-->
+    </style>
+
+    <!-- 會員專區畫面選單style-->
+    <style name="style_user_area_button">
+        <item name="android:background">@drawable/button_for_user_area_menu</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">82dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:textColor">@color/mainPink</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAlignment">viewStart</item>
+<!--        <item name="android:paddingTop">14dp</item>-->
+        <item name="android:paddingLeft">2dp</item>
+        <!-- 去按鈕陰影效果 -->
+<!--        <item name="android:stateListAnimator">@null</item>-->
+    </style>
+
+    <!-- 會員專區畫面選單style-->
+    <style name="style_user_area_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginStart">80dp</item>
+        <item name="android:layout_marginTop">51dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:enabled">false</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <!-- alertDialogBottom 特效 -->
+    <!-- alertDialog animation 樣式 -->
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    </resources>

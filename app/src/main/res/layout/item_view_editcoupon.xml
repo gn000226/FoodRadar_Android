@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvEditCoupon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:padding="6dp"
+    card_view:cardBackgroundColor="#ffdddddd"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivEditCoupon"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/no_image"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEditResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/ivEditCoupon"
+            android:text="@string/textResName"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            card_view:layout_constraintBottom_toTopOf="@+id/couPonStartDate"
+            card_view:layout_constraintStart_toEndOf="@+id/ivEditCoupon" />
+
+        <TextView
+            android:id="@+id/couPonStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEditResName"
+            android:layout_alignStart="@id/tvEditResName"
+            android:layout_marginStart="8dp"
+            android:text="@string/textCouponStart"
+            android:textColor="#555555"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/ivEditCoupon"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/couPonEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="33dp"
+            android:text="@string/textCouponEnd"
+            android:textColor="#555555"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/couPonStartDate"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEditCouInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/couPonStartDate"
+            android:layout_alignStart="@id/tvEditResName"
+            android:layout_marginStart="8dp"
+            android:text="@string/textNoCouponsFound"
+            card_view:layout_constraintStart_toEndOf="@+id/ivEditCoupon"
+            card_view:layout_constraintTop_toBottomOf="@+id/couPonStartDate" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

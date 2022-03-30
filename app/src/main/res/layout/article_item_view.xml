@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvArticle"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/earthBackground">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvUserIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/userIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_baseline_person_pin_24"
+                tools:ignore="VectorDrawableCompat" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="文青的女子"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/cvUserIcon"
+            app:layout_constraintTop_toTopOf="@+id/cvUserIcon" />
+
+        <TextView
+            android:id="@+id/resCategoryInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="西式料理餐廳"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/cvUserIcon"
+            app:layout_constraintTop_toBottomOf="@+id/cvUserIcon" />
+
+        <TextView
+            android:id="@+id/articleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="巷弄間咖啡，度過輕鬆的早安 台北/高雄/桃園"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/resCategoryInfo"
+            app:layout_constraintTop_toBottomOf="@+id/resCategoryInfo" />
+
+        <TextView
+            android:id="@+id/resName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="餐廳：LuffyCoffee路咖啡"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            app:layout_constraintStart_toStartOf="@+id/articleTitle"
+            app:layout_constraintTop_toBottomOf="@+id/articleTitle" />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="380dp"
+            android:layout_height="239.5dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resName"
+            tools:srcCompat="@drawable/ic_baseline_broken_image_24" />
+
+        <TextView
+            android:id="@+id/tvArticleTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="發文時間：2020/08/31"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/userName" />
+
+        <TextView
+            android:id="@+id/tvgoodCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="TextView"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/resName"
+            app:layout_constraintEnd_toStartOf="@+id/ivGoodIcon"
+            tools:text="10" />
+
+        <TextView
+            android:id="@+id/tvCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="10"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivArticleCommentIcon"
+            app:layout_constraintTop_toTopOf="@+id/ivGoodIcon" />
+
+        <ImageView
+            android:id="@+id/ivArticleCommentIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvFavoriteArticle"
+            app:layout_constraintTop_toTopOf="@+id/tvCommentCount"
+            app:srcCompat="@drawable/ic_baseline_chat_bubble_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/tvFavoriteArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="10"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivFavoriteIcon"
+            app:layout_constraintTop_toTopOf="@+id/ivArticleCommentIcon" />
+
+        <ImageView
+            android:id="@+id/ivGoodIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvCommentCount"
+            app:layout_constraintTop_toTopOf="@+id/tvgoodCount"
+            app:srcCompat="@drawable/ic_baseline_thumb_up_24" />
+
+        <ImageView
+            android:id="@+id/ivFavoriteIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvFavoriteArticle"
+            app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

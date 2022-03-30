@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.UserMyArticleFragment">
+
+    <ScrollView
+        android:id="@+id/svMyArticle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constvUsAtMyArticle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 我的文章收藏 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constvUsAtMyArticleCollect"
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="1dp">
+
+                <TextView
+                    android:id="@+id/tvMyArticleCollect"
+                    style="@style/style_user_area_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/textMyArticleCollect"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvMyArticleCollectDivider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/mainPink"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvMyArticleCollect"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvMyArticleCollect"
+                    app:layout_constraintTop_toTopOf="@+id/tvMyArticleCollect" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvMyArticleCollect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="153dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMyArticleCollect" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 我的發文 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constvUsAtMyArticleIsMe"
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                app:layout_constraintTop_toBottomOf="@+id/constvUsAtMyArticleCollect"
+                tools:layout_editor_absoluteX="1dp">
+
+                <TextView
+                    android:id="@+id/tvMyArticleIsMe"
+                    style="@style/style_user_area_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/textMyArticleIsMy"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvMyArticleIsMeDivider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/mainPink"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvMyArticleIsMe"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvMyArticleIsMe"
+                    app:layout_constraintTop_toTopOf="@+id/tvMyArticleIsMe" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvMyArticleIsMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="153dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMyArticleIsMe" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- 我的回文 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constvUsAtMyComment"
+                android:layout_width="match_parent"
+                android:layout_height="209dp"
+                app:layout_constraintTop_toBottomOf="@+id/constvUsAtMyArticleIsMe"
+                tools:layout_editor_absoluteX="1dp">
+
+                <TextView
+                    android:id="@+id/tvMyComment"
+                    style="@style/style_user_area_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/textMyComment"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvMyCommentDivider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/mainPink"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvMyComment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvMyComment"
+                    app:layout_constraintTop_toTopOf="@+id/tvMyComment" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvMyComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="153dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMyComment" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

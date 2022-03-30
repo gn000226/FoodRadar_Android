@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 會員專區畫面選單style-->
+    <item android:id="@android:id/background">
+        <!-- 畫面元件ripple動畫效果      -->
+        <ripple xmlns:android="http://schemas.android.com/apk/res/android"
+            android:color="@color/mainYellow">
+        </ripple>
+
+<!--        &lt;!&ndash; rectangle 長方形 可以畫出直角形，圓角形，弧形等&ndash;&gt;-->
+<!--        <shape android:shape="rectangle">-->
+<!--            &lt;!&ndash;設定圓角，當設置的圓角半徑很大，就可變成弧形邊了&ndash;&gt;-->
+<!--                <corners android:radius="8dp" />-->
+<!--                &lt;!&ndash;背景填滿顏色 &ndash;&gt;-->
+<!--                <solid android:color="@color/mainPink" />-->
+<!--                &lt;!&ndash;邊框粗細既顏色&ndash;&gt;-->
+<!--                <stroke android:width="1dip" android:color="#538394" />-->
+<!--                &lt;!&ndash;漸層顏色&ndash;&gt;-->
+<!--                <gradient android:angle="-90" android:startColor="#0099CC" android:endColor="#017DAB"  />-->
+<!--                &lt;!&ndash;設定背景padding空間&ndash;&gt;-->
+<!--                <padding android:top="6dp"-->
+<!--                         android:left="2dp"/>-->
+<!--        </shape>-->
+    </item>
+</selector>

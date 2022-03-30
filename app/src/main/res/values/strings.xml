@@ -1,0 +1,384 @@
+<resources>
+    <string name="app_name">FoodRadar_Android</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">首頁</string>
+    <string name="map">餐廳地圖</string>
+    <string name="chinacategory">中式料理餐廳</string>
+    <string name="coupon">優惠活動</string>
+    <string name="article">討論區</string>
+    <string name="user">會員專區</string>
+    <string name="appbar">完成</string>
+    <string name="ezLogin">登入</string>
+    <string name="ezLogout">登出</string>
+    <string name="editCouponAdd">新增優惠券</string>
+    <string name="editCoupon">維護優惠券</string>
+    <string name="editDelcoupon">優惠券刪除</string>
+    <string name="editAddCoupon">新建優惠券</string>
+    <string name="textNoFindCoupon">請新增優惠券</string>
+    <string name="id_num">ID_Number</string>
+    <string-array name="couponType">
+        <item>優惠券活動</item>
+        <item>公告活動</item>
+    </string-array>
+
+    <string-array name="couponEnable">
+        <item>不可收藏</item>
+        <item>可收藏</item>
+    </string-array>
+
+
+    <string name="textEatWhat">今天吃什麼</string>
+    <string name="title_of_myres">我的餐廳收藏</string>
+    <string name="title_of_mycoupon">我的優惠券收藏</string>
+    <string name="title_of_messageSend">訊息推播設定</string>
+    <string name="title_of_myarticle">我的社群活動</string>
+    <string name="title_of_userdata">會員資料設定</string>
+    <string name="title_of_sys_setup">系統設定</string>
+    <string name="title_of_contact_us">聯繫我們</string>
+    <string name="newArticle">新進榜</string>
+    <string name="rankArticle">排行榜</string>
+    <string name="favoriteArticle">收藏榜</string>
+    <string name="textNoCouponsFound">找不到優惠券</string>
+    <!--    <string name="textNoNetwork">no network connection available</string>-->
+    <string name="textNoMainFound">no Main found</string>
+    <string name="textNoNetwork">No Network</string>
+    <string name="resMaintain">餐廳資訊維護</string>
+    <string name="textResName">餐廳名稱</string>
+    <string name="textResTel">聯絡電話</string>
+    <string name="textResAddress">餐廳地址</string>
+    <string name="textResHours">營業時間</string>
+    <string name="textResCategory">餐廳分類</string>
+    <string name="textResEnable">上架狀態</string>
+    <string name="textEnable">上架</string>
+    <!--    <string name="textLogin">登入</string>-->
+    <string name="textLogout">登出</string>
+
+    <string name="textNoImgFound">找不到圖片</string>
+    <string name="textNoCommentFound">尚無留言</string>
+    <string name="commentNoInsert">請輸入留言</string>
+    <string name="commentInsertError">留言失敗</string>
+    <string name="commentInsertSuccess">留言成功</string>
+
+    <string name="textChangPassword">修改密碼</string>
+    <string name="textDateTime">請選擇生日</string>
+    <string name="textDatePicker">Date picker</string>
+    <string name="textNoArticleFound">找不到文章</string>
+    <string name="titleResInsert">新增餐廳</string>
+    <!--    <string name="textSignUp">註冊</string>-->
+    <string name="textUserChangConfrim">確認修改</string>
+    <string name="textNoImagePickerApp">手機裡沒有選取照片程式</string>
+    <string name="textNoRessFound">找不到餐廳</string>
+    <string name="textResIsEnable">已上架</string>
+    <string name="textResIsNotEnable">未上架</string>
+    <string name="textTakePicture">拍照</string>
+    <string name="textPickPicture">挑選照片</string>
+    <string name="textInsert">確定新增</string>
+    <string name="textInsertCancel">取消新增</string>
+    <string name="textNoCameraApp">沒有拍照程式</string>
+    <string name="textTo">至</string>
+    <string name="textEveryWeek">每週</string>
+    <string name="textMonday">星期一</string>
+    <string name="textAddHours">加時段</string>
+    <string name="textDeleteHours">刪時段</string>
+    <string name="textTuesDay">星期二</string>
+    <string name="textAdd">＋</string>
+    <string name="textDelete">–</string>
+    <string name="textWednesday">星期三</string>
+    <string name="textThursday">星期四</string>
+    <string name="textFriday">星期五</string>
+    <string name="textSaturday">星期六</string>
+    <string name="textSunday">星期日</string>
+
+    <string name="textNetworkConnectedFail">沒有網路連線</string>
+    <string name="textRegisterSend">送出註冊</string>
+    <string name="textRegisterCancel">取消註冊</string>
+    <string name="textUserPhone">手機號碼</string>
+    <string name="textUserPassword">密碼</string>
+    <string name="textPasswordConfirm">確認密碼</string>
+    <string name="textPlsInpup">請輸入</string>
+
+    <string name="textInsertFail">新增失敗</string>
+    <string name="textInsertSuccess">新增成功</string>
+    <string name="textModifyUserName">最後修改者Name</string>
+    <string name="textModifyDate">最後修改時間</string>
+    <string name="textDeleteRes">刪除</string>
+    <string name="textUpdateRes">修改</string>
+    <string name="titleResUpdate">修改餐廳資訊</string>
+    <string name="textDeleteFail">刪除失敗</string>
+    <string name="textDeleteSuccess">刪除成功</string>
+    <string name="textOK">確定</string>
+    <string name="textCancel">取消</string>
+    <string name="textInputEmpty">所有欄位皆不可空白</string>
+    <string name="textAddressError">輸入地址錯誤</string>
+    <string name="textImageEmpty">請上傳照片</string>
+    <string name="textUpdate">確定修改</string>
+    <string name="textUpdateCancel">取消修改</string>
+    <string name="textHoursError">營業時間輸入錯誤</string>
+    <string name="textUpdateFail">修改失敗</string>
+    <string name="textUpdateSuccess">修改成功</string>
+    <string name="textUpdateUseLose">優惠券使用失敗</string>
+    <string name="textUpdateUseOk">優惠券使用成功</string>
+    <string name="textResRating">餐廳評價</string>
+    <string name="textSearchResAgain">重新查詢附近餐廳</string>
+
+    <!--定義FCM-->
+    <string name="Fcm_name">FCMDemo</string>
+    <string name="FcmNoNetwork">沒有網路連線</string>
+    <string name="textSendSingleFcm">FCM單發</string>
+    <string name="textSendGroupFcm">FCM群發</string>
+    <string name="textGetToken">取得裝置Token</string>
+    <string name="textTitle">訊息標題</string>
+    <string name="textBody">訊息內容</string>
+    <string name="textData">自訂資料</string>
+    <string name="textClear">清除</string>
+    <string name="textRegistrationToken">裝置ID</string>
+    <string name="default_notification_channel_id">default_channel_id</string>
+    <string name="default_notification_channel_name">default_channel_name</string>
+    <string name="textSubscribeHealth">訂閱「健康主題」</string>
+    <string name="textSubscribed">完成訂閱</string>
+    <string name="textSubscribeFailed">訂閱失敗</string>
+    <string name="textSendSubscriber">發FCM給訂閱者</string>
+    <string name="ezFcm">使用規則</string>
+
+    <!--定義營業時間字串陣列內容-->
+    <string-array name="textHoursArray">
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+        <item>24:00</item>
+    </string-array>
+
+    <string-array name="textHoursArrayWithRest">
+        <item>休息</item>
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+        <item>24:00</item>
+    </string-array>
+
+    <string-array name="textHoursArrayWithSame">
+        <item>同上</item>
+        <item>休息</item>
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+        <item>24:00</item>
+    </string-array>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_register">會員註冊</string>
+    <string name="action_sign_in">會員登入</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="phone">Phone</string>
+    <string name="userId">userId</string>
+    <string name="textResDistance">餐廳距離</string>
+    <string name="titleResDetail">餐廳資訊</string>
+    <string name="textGiveRating">留下評價</string>
+    <string name="textLogouted">已登出</string>
+    <string name="textDontWantLogout">不要登出</string>
+    <string name="textMustInput">不可為空白</string>
+    <string name="textPasswordConfirmErr">確認密碼與密碼不符</string>
+    <string name="title_of_res_coupon_maintain">餐廳優惠管理</string>
+    <string name="title_of_res_coupon_update">餐廳優惠維護</string>
+    <string name="title_of_res_user_management">會員管理</string>
+    <string name="title_of_res_article_management">會員發文管理</string>
+    <string name="textImageNumber">照片數量</string>
+    <string name="textReadArticle">觀看食記</string>
+    <string name="textWriteArticle">撰寫食記</string>
+    <string name="textDirect">開啟導航</string>
+    <string name="textLocationEmpty">無法定位現在位置</string>
+    <string name="textOriginNotFound">找不到起點</string>
+    <string name="textDestinationNotFound">找不到目的地</string>
+    <string name="textUserBirth">出生日期</string>
+    <string name="textCouponStart">優惠券開始日期</string>
+    <string name="textCouponEnd">優惠券結束日期</string>
+    <string name="textNotifi">推播通知</string>
+    <string name="textOn">開啟</string>
+    <string name="textOff">關閉</string>
+    <string name="textMyRes">我的收藏</string>
+    <string name="textDemo">Demo</string>
+    <string name="textInsertResRatingFail">新增評價失敗</string>
+    <string name="textInsertResRatingSuccess">新增評價成功</string>
+    <string name="textUpdateResRatingFail">修改評價失敗</string>
+    <string name="textUpdateResRatingSuccess">修改評價成功</string>
+    <string name="textResList">餐廳列表</string>
+    <string name="textResMap">餐廳地圖</string>
+    <string name="textNoRating">尚無評價</string>
+    <string name="textMyArticleCollect">我的文章收藏</string>
+    <string name="textArticleWirter">"發文者"</string>
+    <string name="textArticleDate">"發文日期"</string>
+    <string name="textArticleText">"內文"</string>
+    <string name="textMyArticleIsMy">我的發文</string>
+    <string name="textMyComment">我的回文</string>
+    <string name="textCommentDate">"回文日期"</string>
+    <string name="textCommentText">"回文"</string>
+    <string name="textRegisterDate">"註冊日期"</string>
+    <string name="textAccountStatus">"帳號狀態"</string>
+    <string name="textOfEnable">"啟用"</string>
+    <string name="textOfDisable">"停用"</string>
+    <string name="textInsertMyResFail">新增餐廳收藏失敗</string>
+    <string name="textInsertMyResSuccess">新增餐廳收藏成功</string>
+    <string name="textDeleteMyResFail">移除餐廳收藏失敗</string>
+    <string name="textDeleteMyResSuccess">移除餐廳收藏成功</string>
+    <string name="textNearRess">附近餐廳</string>
+    <string name="textNoMyRessFound">您尚未收藏任何餐廳</string>
+    <string name="textMyResList">我的收藏列表</string>
+    <string name="titleResImg">餐廳照片</string>
+
+    <string name="textWarning">警告</string>
+    <string name="deleteImage">你即將要刪除圖片</string>
+    <string name="deleteImageYes">刪除</string>
+    <string name="deleteImageNo">取消</string>
+
+    <string name="開始日期">開始日期</string>
+    <string name="textSetSuccess">設定成功</string>
+    <string name="textSetFail">設定未完成</string>
+    <string name="textSearchArticle">搜尋會員發文</string>
+
+</resources>

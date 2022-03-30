@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "630060957774",
+    "firebase_url": "https://my-foodradarapi1016.firebaseio.com",
+    "project_id": "my-foodradarapi1016",
+    "storage_bucket": "my-foodradarapi1016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630060957774:android:45c59d375d257fea3a031f",
+        "android_client_info": {
+          "package_name": "com.example.foodradar_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630060957774-tjhcsv5l38f895cevqp8ltrh4htairq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodradar_android",
+            "certificate_hash": "401897b5e6e379539b2e0e11f3d4f24020e250ae"
+          }
+        },
+        {
+          "client_id": "630060957774-0a0qkevr76g4im12a9kba93svfdfpcbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY_rTjWZMKVPB4VwN8bWfXEB2Nv9nK1Kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630060957774-0a0qkevr76g4im12a9kba93svfdfpcbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

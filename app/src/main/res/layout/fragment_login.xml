@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".main.LoginFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo_photo"
+        android:layout_width="279dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_foodradar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvuserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帳號 : " />
+
+        <EditText
+            android:id="@+id/userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="請輸入手機號碼" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvuserPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密碼 : " />
+        <EditText
+            android:id="@+id/userPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="登入" />
+        <Button
+            android:id="@+id/regcancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btAutoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="自動輸入登入" />
+
+</LinearLayout>

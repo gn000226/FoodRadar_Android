@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".res.ResDetailFragment">
+
+
+        <ImageView
+            android:id="@+id/ivRes"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/no_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/textResName"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivRes" />
+
+        <TextView
+            android:id="@+id/tvResRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/textResRating"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvResName"
+            app:layout_constraintTop_toBottomOf="@+id/tvResName" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ivResRatingStar"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:src="@drawable/ic_baseline_star_border_yellow_24"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/tvResRating"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/tvResRating" />-->
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:progressTint="#FFEB3B"
+            app:layout_constraintStart_toEndOf="@+id/tvResRating"
+            app:layout_constraintTop_toTopOf="@+id/tvResRating" />
+
+
+        <Button
+            android:id="@+id/btResRating"
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button"
+            android:text="@string/textGiveRating"
+            app:layout_constraintBottom_toBottomOf="@+id/tvResRating"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar" />
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_share_24"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvResName" />
+
+        <ImageView
+            android:id="@+id/ivMyRes"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_turned_in_not_24"
+            app:layout_constraintBottom_toBottomOf="@+id/btResRating"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvResCategoryInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/textResCategory"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvResRating"
+            app:layout_constraintTop_toBottomOf="@+id/tvResRating" />
+
+        <ImageView
+            android:id="@+id/ivResAddress"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_location_on_24"
+            app:layout_constraintStart_toStartOf="@+id/tvResCategoryInfo"
+            app:layout_constraintTop_toBottomOf="@+id/tvResCategoryInfo" />
+
+        <TextView
+            android:id="@+id/tvResAddress"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/textResAddress"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvResHours"
+            app:layout_constraintStart_toEndOf="@+id/ivResAddress" />
+
+        <ImageView
+            android:id="@+id/ivResHours"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_hours_24"
+            app:layout_constraintStart_toStartOf="@+id/tvResRating"
+            app:layout_constraintTop_toBottomOf="@+id/ivResAddress" />
+
+        <TextView
+            android:id="@+id/tvResHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/textResHours"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/ivResHours"
+            app:layout_constraintTop_toTopOf="@+id/ivResHours" />
+
+        <TextView
+            android:id="@+id/tvResHoursDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="▼"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/tvResHours"
+            app:layout_constraintTop_toTopOf="@+id/tvResHours" />
+
+        <ImageView
+            android:id="@+id/ivResTel"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_phone_24"
+            app:layout_constraintStart_toStartOf="@+id/tvResRating"
+            app:layout_constraintTop_toBottomOf="@+id/tvResHours" />
+
+        <TextView
+            android:id="@+id/tvResTel"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:autoLink="phone"
+            android:text="@string/textResTel"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivResTel"
+            app:layout_constraintStart_toEndOf="@+id/ivResTel" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_image_24"
+            app:layout_constraintStart_toStartOf="@+id/tvResRating"
+            app:layout_constraintTop_toBottomOf="@+id/ivResTel" />
+
+        <TextView
+            android:id="@+id/tvImageNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/textImageNumber"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivImage"
+            app:layout_constraintStart_toEndOf="@+id/ivImage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvImage"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+        <Button
+            android:id="@+id/btReadArticle"
+            style="@style/styleButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button"
+            android:text="@string/textReadArticle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvImage" />
+
+        <Button
+            android:id="@+id/btWriteArticle"
+            style="@style/styleButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button"
+            android:text="@string/textWriteArticle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btReadArticle" />
+
+        <Button
+            android:id="@+id/btDirect"
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button"
+            android:text="@string/textDirect"
+            app:layout_constraintBottom_toBottomOf="@+id/tvResAddress"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

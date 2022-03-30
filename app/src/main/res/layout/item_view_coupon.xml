@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="343dp"
+    android:layout_height="199dp"
+    android:layout_margin="6dp"
+    android:padding="6dp"
+    card_view:cardBackgroundColor="#ffdddddd"
+    card_view:cardCornerRadius="18dp"
+    card_view:cardElevation="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivDemoUp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:background="#5F5E5E"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/btUpCoupon"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="#05F44336"-->
+<!--            android:text="公告活動"-->
+<!--            android:textColor="@color/design_default_color_error"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textStyle="bold"-->
+<!--            card_view:layout_constraintBottom_toBottomOf="@+id/ivDemoUp"-->
+<!--            card_view:layout_constraintEnd_toEndOf="@+id/ivDemoUp" />-->
+        <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/btUsCoupon"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:src="@drawable/ic_add"-->
+<!--            card_view:layout_constraintBottom_toBottomOf="@+id/ivDemo"-->
+<!--            card_view:layout_constraintEnd_toEndOf="@+id/ivDemo" />-->
+
+        <TextView
+            android:id="@+id/upCouInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toEndOf="@id/ivDemoUp"
+            android:text="說明事項"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/ivDemoUp" />
+
+        <TextView
+            android:id="@+id/couPonStartDateUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivDemoUp"
+            android:layout_alignStart="@id/ivDemoUp"
+            android:layout_marginEnd="8dp"
+            android:text="開始日期"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="@+id/upCouInfo"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="@+id/upCouInfo" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/couPonEndDateUp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/couPonStartDateUp"-->
+<!--            android:layout_alignStart="@id/ivDemoUp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:text="結束日期"-->
+<!--            android:textStyle="bold"-->
+<!--            card_view:layout_constraintBottom_toBottomOf="@+id/couPonStartDateUp"-->
+<!--            card_view:layout_constraintStart_toEndOf="@+id/couPonStartDateUp"-->
+<!--            card_view:layout_constraintTop_toTopOf="@+id/couPonStartDateUp" />-->
+
+        <!--        <TextView-->
+<!--            android:id="@+id/tvCouInfo2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="32dp"-->
+<!--            android:layout_marginTop="160dp"-->
+<!--            android:background="#AA000000"-->
+<!--            android:padding="12dp"-->
+<!--            android:text="tvCouInfo"-->
+<!--            android:textColor="@android:color/holo_red_dark"-->
+<!--            android:textSize="16sp"-->
+<!--            card_view:layout_constraintBottom_toBottomOf="parent"-->
+<!--            card_view:layout_constraintStart_toStartOf="parent"-->
+<!--            card_view:layout_constraintTop_toTopOf="@+id/ivDemo" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

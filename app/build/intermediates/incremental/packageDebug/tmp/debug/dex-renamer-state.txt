@@ -1,0 +1,4 @@
+#Wed Mar 30 21:00:52 CST 2022
+base.0=/Users/gn0987123/Desktop/ios/FoodRadar_Android/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

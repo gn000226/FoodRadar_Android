@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.foodradar_android.main.CategoryFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_resMapFragment"
+            app:destination="@id/resMapFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_couponFragment"
+            app:destination="@id/couponFragment" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_userAreaFragment"
+            app:destination="@id/userAreaFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_chinaRestaurantFragment"
+            app:destination="@id/CategoryTypeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_mainFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/resMapFragment"
+        android:name="com.example.foodradar_android.res.ResMapFragment"
+        android:label="fragment_res_map"
+        tools:layout="@layout/fragment_res_map" >
+        <action
+            android:id="@+id/action_resMapFragment_to_resDetailFragment"
+            app:destination="@id/resDetailFragment" />
+        <action
+            android:id="@+id/action_resMapFragment_to_resListFragment"
+            app:destination="@id/resListFragment" />
+        <action
+            android:id="@+id/action_resMapFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/couponFragment"
+        android:name="com.example.foodradar_android.coupon.CouponFragment"
+        android:label="fragment_coupon"
+        tools:layout="@layout/fragment_coupon" >
+        <action
+            android:id="@+id/action_couponFragment_to_couponDetailFragment"
+            app:destination="@id/couponDetailFragment" />
+        <action
+            android:id="@+id/action_couponFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_couponFragment_to_category_Detail_Fragment"
+            app:destination="@id/category_Detail_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userAreaFragment"
+        android:name="com.example.foodradar_android.user.UserAreaFragment"
+        android:label="fragment_user_area"
+        tools:layout="@layout/fragment_user_area" >
+        <action
+            android:id="@+id/action_userAreaFragment_to_userSysSetupFragment"
+            app:destination="@id/userSysSetupFragment" />
+        <action
+            android:id="@+id/action_userAreaFragment_to_resMaintainFragment"
+            app:destination="@id/resMaintainFragment" />
+        <action
+            android:id="@+id/action_userAreaFragment_to_userMyResFragment"
+            app:destination="@id/userMyResFragment" />
+        <action
+            android:id="@+id/action_userAreaFragment_to_userDataSetupFragment"
+            app:destination="@id/userDataSetupFragment" />
+        <action
+            android:id="@+id/action_userAreaFragment_to_userMyCouponFragment"
+            app:destination="@id/userMyCouponFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userSysSetupFragment"
+        android:name="com.example.foodradar_android.user.UserSysSetupFragment"
+        android:label="fragment_user_sys_setup"
+        tools:layout="@layout/fragment_user_sys_setup" >
+        <action
+            android:id="@+id/action_userSysSetupFragment_to_fcmFragment"
+            app:destination="@id/fcmFragment" />
+        <action
+            android:id="@+id/action_userSysSetupFragment_to_couponEditFragment"
+            app:destination="@id/couponEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMyResFragment"
+        android:name="com.example.foodradar_android.user.UserMyResFragment"
+        android:label="fragment_user_my_res"
+        tools:layout="@layout/fragment_user_my_res" >
+        <action
+            android:id="@+id/action_userMyResFragment_to_resDetailFragment"
+            app:destination="@id/resDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resMaintainFragment"
+        android:name="com.example.foodradar_android.user.ResMaintainFragment"
+        android:label="fragment_res_maintain"
+        tools:layout="@layout/fragment_res_maintain" >
+        <action
+            android:id="@+id/action_resMaintainFragment_to_resInsertFragment"
+            app:destination="@id/resInsertFragment" />
+        <action
+            android:id="@+id/action_resMaintainFragment_to_resUpdateFragment"
+            app:destination="@id/resUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.foodradar_android.article.ArticleFragment"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" >
+        <action
+            android:id="@+id/action_articleFragment_to_newArticleFragment2"
+            app:destination="@id/newArticleFragment" />
+        <action
+            android:id="@+id/action_articleFragment_to_articleInsertFragment"
+            app:destination="@id/articleInsertFragment" />
+        <action
+            android:id="@+id/action_articleFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+        <action
+            android:id="@+id/action_articleFragment_to_userDataSetupFragment"
+            app:destination="@id/userDataSetupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resInsertFragment"
+        android:name="com.example.foodradar_android.user.ResInsertFragment"
+        android:label="fragment_res_insert"
+        tools:layout="@layout/fragment_res_insert" >
+        <action
+            android:id="@+id/action_resInsertFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CategoryTypeFragment"
+        android:name="com.example.foodradar_android.main.CategoryTypeFragment"
+        android:label="fragment_china_restaurant"
+        tools:layout="@layout/fragment_china_restaurant" >
+        <action
+            android:id="@+id/action_CategoryTypeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_CategoryTypeFragment_to_userDataSetupFragment"
+            app:destination="@id/userDataSetupFragment" />
+        <action
+            android:id="@+id/action_CategoryTypeFragment_to_resDetailFragment"
+            app:destination="@id/resDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.example.foodradar_android.article.ArticleDetailFragment"
+        android:label="fragment_article_detail"
+        tools:layout="@layout/fragment_article_detail" >
+        <action
+            android:id="@+id/action_articleDetailFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDataSetupFragment"
+        android:name="com.example.foodradar_android.user.UserDataSetupFragment"
+        android:label="fragment_user_data_setup"
+        tools:layout="@layout/fragment_user_data_setup" />
+    <fragment
+        android:id="@+id/articleInsertFragment"
+        android:name="com.example.foodradar_android.article.ArticleInsertFragment"
+        android:label="fragment_article_insert"
+        tools:layout="@layout/fragment_article_insert" >
+        <action
+            android:id="@+id/action_articleInsertFragment_to_resAddressFragment"
+            app:destination="@id/resAddressFragment" />
+        <action
+            android:id="@+id/action_articleInsertFragment_to_insertImageFragment"
+            app:destination="@id/insertImageFragment" />
+        <action
+            android:id="@+id/action_articleInsertFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resAddressFragment"
+        android:name="com.example.foodradar_android.article.ResAddressFragment"
+        android:label="fragment_res_address"
+        tools:layout="@layout/fragment_res_address" >
+        <action
+            android:id="@+id/action_resAddressFragment_to_articleInsertFragment"
+            app:destination="@id/articleInsertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertImageFragment"
+        android:name="com.example.foodradar_android.article.InsertImageFragment"
+        android:label="fragment_insert_image"
+        tools:layout="@layout/fragment_insert_image" />
+<!--=======-->
+<!--        tools:layout="@layout/fragment_article_insert" />-->
+    <fragment
+        android:id="@+id/category_Detail_Fragment"
+        android:name="com.example.foodradar_android.main.Category_Detail_Fragment"
+        android:label="fragment_category__detail_"
+        tools:layout="@layout/fragment_category__detail_" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.foodradar_android.main.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_register_Fragment"
+            app:destination="@id/register_Fragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userDataSetupFragment"
+            app:destination="@id/userDataSetupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_Fragment"
+        android:name="com.example.foodradar_android.main.Register_Fragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/resUpdateFragment"
+        android:name="com.example.foodradar_android.user.ResUpdateFragment"
+        android:label="fragment_res_update"
+        tools:layout="@layout/fragment_res_update" />
+    <fragment
+        android:id="@+id/resDetailFragment"
+        android:name="com.example.foodradar_android.res.ResDetailFragment"
+        android:label="fragment_res_detail"
+        tools:layout="@layout/fragment_res_detail" >
+        <action
+            android:id="@+id/action_resDetailFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_resDetailFragment_to_resImgFragment"
+            app:destination="@id/resImgFragment" />
+        <action
+            android:id="@+id/action_resDetailFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+        <action
+            android:id="@+id/action_resDetailFragment_to_articleInsertFragment"
+            app:destination="@id/articleInsertFragment" />
+    </fragment>
+    <fragment
+    android:id="@+id/couponDetailFragment"
+    android:name="com.example.foodradar_android.coupon.CouponDetailFragment"
+    android:label="fragment_coupon_detail"
+    tools:layout="@layout/fragment_coupon_detail" />
+    <fragment
+        android:id="@+id/couponMaintainFragment"
+        android:name="com.example.foodradar_android.coupon.CouponMaintainFragment"
+        android:label="fragment_coupon_maintain"
+        tools:layout="@layout/fragment_coupon_maintain" >
+        <action
+            android:id="@+id/action_couponMaintainFragment_to_resAddressFragment"
+            app:destination="@id/resAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resListFragment"
+        android:name="com.example.foodradar_android.res.ResListFragment"
+        android:label="fragment_res_list"
+        tools:layout="@layout/fragment_res_list" >
+        <action
+            android:id="@+id/action_resListFragment_to_resDetailFragment"
+            app:destination="@id/resDetailFragment" />
+        <action
+            android:id="@+id/action_resListFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_resListFragment_to_userMyResFragment"
+            app:destination="@id/userMyResFragment" />
+    </fragment>
+    <fragment
+
+        android:id="@+id/fcmFragment"
+        android:name="com.example.foodradar_android.FcmFragment"
+        android:label="fragment_fcm_item"
+        tools:layout="@layout/fragment_fcm_item" />
+    <fragment
+        android:id="@+id/userMyCouponFragment"
+        android:name="com.example.foodradar_android.user.UserMyCouponFragment"
+        android:label="fragment_user_my_coupon"
+        tools:layout="@layout/fragment_user_my_coupon" >
+        <action
+            android:id="@+id/action_userMyCouponFragment_to_couponDetailFragment"
+            app:destination="@id/couponDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userMyArticleFragment"
+        android:name="com.example.foodradar_android.user.UserMyArticleFragment"
+        android:label="fragment_user_my_article"
+        tools:layout="@layout/fragment_user_my_article" />
+    <fragment
+        android:id="@+id/userManagementFragment"
+        android:name="com.example.foodradar_android.user.UserManagementFragment"
+        android:label="fragment_user_management"
+        tools:layout="@layout/fragment_user_management" />
+    <fragment
+        android:id="@+id/resImgFragment"
+        android:name="com.example.foodradar_android.res.ResImgFragment"
+        android:label="fragment_res_img"
+        tools:layout="@layout/fragment_res_img" />
+    <fragment
+        android:id="@+id/couponEditFragment"
+        android:name="com.example.foodradar_android.coupon.CouponEditFragment"
+        android:label="fragment_coupon_edit"
+        tools:layout="@layout/fragment_coupon_edit" >
+        <action
+            android:id="@+id/action_couponEditFragment_to_couponMaintainFragment"
+            app:destination="@id/couponMaintainFragment" />
+        <action
+            android:id="@+id/action_couponEditFragment_to_couponUpdataFragment"
+            app:destination="@id/couponUpdataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/couponUpdataFragment"
+        android:name="com.example.foodradar_android.coupon.CouponUpdataFragment"
+        android:label="fragment_coupon_updata"
+        tools:layout="@layout/fragment_coupon_updata" >
+        <action
+            android:id="@+id/action_couponUpdataFragment_to_resAddressFragment"
+            app:destination="@id/resAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleManagementFragment"
+        android:name="com.example.foodradar_android.user.ArticleManagementFragment"
+        android:label="fragment_article_management"
+        tools:layout="@layout/fragment_article_management" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.foodradar_android.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
+
+
+</navigation>

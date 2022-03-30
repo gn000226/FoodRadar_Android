@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/article_navigation"
+    app:startDestination="@id/newArticleFragment">
+
+    <fragment
+        android:id="@+id/newArticleFragment"
+        android:name="com.example.foodradar_android.article.NewArticleFragment"
+        android:label="fragment_new_article"
+        tools:layout="@layout/fragment_new_article" >
+        <action
+            android:id="@+id/action_newArticleFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+        <action
+            android:id="@+id/action_newArticleFragment_to_articleInsertFragment"
+            app:destination="@id/articleInsertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rankArticleFragment"
+        android:name="com.example.foodradar_android.article.RankArticleFragment"
+        android:label="fragment_rank_article"
+        tools:layout="@layout/fragment_rank_article" >
+        <action
+            android:id="@+id/action_rankArticleFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+        <action
+            android:id="@+id/action_rankArticleFragment_to_articleInsertFragment"
+            app:destination="@id/articleInsertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteArticleFragment"
+        android:name="com.example.foodradar_android.article.FavoriteArticleFragment"
+        android:label="fragment_favorite_article"
+        tools:layout="@layout/fragment_favorite_article" >
+        <action
+            android:id="@+id/action_favoriteArticleFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+        <action
+            android:id="@+id/action_favoriteArticleFragment_to_articleInsertFragment"
+            app:destination="@id/articleInsertFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.example.foodradar_android.article.ArticleDetailFragment"
+        android:label="fragment_article_detail"
+        tools:layout="@layout/fragment_article_detail" >
+        <action
+            android:id="@+id/action_articleDetailFragment_to_rankArticleFragment"
+            app:destination="@id/rankArticleFragment" />
+        <action
+            android:id="@+id/action_articleDetailFragment_to_favoriteArticleFragment"
+            app:destination="@id/favoriteArticleFragment" />
+        <action
+            android:id="@+id/action_articleDetailFragment_to_newArticleFragment2"
+            app:destination="@id/newArticleFragment" />
+        <action
+            android:id="@+id/action_articleDetailFragment_to_articleUpdateFragment"
+            app:destination="@id/articleUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleInsertFragment"
+        android:name="com.example.foodradar_android.article.ArticleInsertFragment"
+        android:label="fragment_article_insert"
+        tools:layout="@layout/fragment_article_insert" >
+        <action
+            android:id="@+id/action_articleInsertFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+        <action
+            android:id="@+id/action_articleInsertFragment_to_resAddressFragment2"
+            app:destination="@id/resAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resAddressFragment"
+        android:name="com.example.foodradar_android.article.ResAddressFragment"
+        android:label="fragment_res_address"
+        tools:layout="@layout/fragment_res_address" />
+    <fragment
+        android:id="@+id/articleUpdateFragment"
+        android:name="com.example.foodradar_android.article.ArticleUpdateFragment"
+        android:label="fragment_article_update"
+        tools:layout="@layout/fragment_article_update" >
+        <action
+            android:id="@+id/action_articleUpdateFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+    </fragment>
+</navigation>

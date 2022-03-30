@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/resMapFragment"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="@string/map" />
+    <item
+        android:id="@+id/couponFragment"
+        android:icon="@drawable/ic_baseline_card_giftcard_24"
+        android:title="@string/coupon" />
+<!--    <item-->
+<!--    <HEAD:FoodRadar_Android/app/src/main/res/menu/buttom_navigation_menu.xml-->
+<!--        android:id="@+id/newArticleFragment"-->
+    <item
+        android:id="@+id/articleFragment"
+        android:icon="@drawable/ic_baseline_comment_24"
+        android:title="@string/article" />
+    <item
+        android:id="@+id/userAreaFragment"
+        android:icon="@drawable/ic_baseline_user_24"
+        android:title="@string/user" />
+</menu>

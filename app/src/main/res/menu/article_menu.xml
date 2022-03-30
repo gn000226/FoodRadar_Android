@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/newArticleFragment"
+        android:icon="@drawable/ic_baseline_fiber_new_24"
+        android:title="@string/newArticle" />
+    <item
+        android:id="@+id/rankArticleFragment"
+        android:icon="@drawable/ic_baseline_thumb_up_24"
+        android:title="@string/rankArticle" />
+    <item
+        android:id="@+id/favoriteArticleFragment"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/favoriteArticle" />
+</menu>

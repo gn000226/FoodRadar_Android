@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    tools:context=".coupon.CouponUpdataFragment">
+
+
+
+
+    <ScrollView
+        android:id="@+id/svMaintain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#36FDC6C6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvcouPonPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="#36FDC6C6">
+
+
+                <ImageView
+                    android:id="@+id/imcouPonPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="199dp"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+
+                    app:srcCompat="@drawable/no_image" />
+
+                <ImageButton
+                    android:id="@+id/ibphotoAdd"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="right|bottom"
+                    android:background="#00000000"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/id_num"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+                <TextView
+                    android:id="@+id/tvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="12345"
+                    android:textColor="#0000FF"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="@+id/textView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+
+                <Button
+                    android:id="@+id/tvcouPonStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="bottom"
+                    android:text="優惠券開始日期："
+                    android:textAlignment="gravity"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/etcouPonStartDate"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="2dp"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvcouPonStartDate"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/etcouPonStartDateDivider"
+                    android:layout_width="160dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="45dp"
+                    android:background="#424242"
+                    app:layout_constraintEnd_toEndOf="@+id/etcouPonStartDate"
+                    app:layout_constraintTop_toTopOf="@+id/etcouPonStartDate" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/tvcouPonEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:text="優惠券結束日期："
+                    android:textAlignment="gravity"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/etcouPonEndDate"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="18sp"
+                    android:paddingLeft="2dp"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvcouPonEndDate"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/etcouPonEndDateDivider"
+                    android:layout_width="160dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="45dp"
+                    android:background="#424242"
+                    app:layout_constraintEnd_toEndOf="@+id/etcouPonEndDate"
+                    app:layout_constraintTop_toTopOf="@+id/etcouPonEndDate" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvcouPonType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="優惠券型態"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:entries="@array/couponType"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvcouPonEnable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="優惠券使用"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spEnable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:entries="@array/couponEnable" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvcouPonInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:hint="說明"
+                    android:text="優惠券活動"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etcouPonInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btUpdataAdd"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button"
+                    android:text="修改"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp"
+                    tools:layout_editor_absoluteX="90dp"
+                    tools:layout_editor_absoluteY="550dp" />
+
+                <Button
+                    android:id="@+id/btUpdataCancel"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/button"
+                    android:text="取消完成"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp"
+                    tools:layout_editor_absoluteX="238dp"
+                    tools:layout_editor_absoluteY="550dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

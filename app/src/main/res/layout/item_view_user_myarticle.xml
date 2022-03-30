@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="369dp"
+    android:layout_height="153dp"
+    android:layout_gravity="center"
+    android:layout_margin="4dp"
+    android:padding="6dp"
+    app:cardBackgroundColor="#36FDC6C6"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="355dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:background="#0FFC2828"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+<!--        android:background="#FDC3C3"-->
+        <ImageView
+            android:id="@+id/imAtMaResImg"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/user_area_img_backgrond"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircleRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_foodradar" />
+
+        <TextView
+            android:id="@+id/tvAtMaArticleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="[主旨]"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imAtMaResImg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvAtMaArticleTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/textArticleDate"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/imAtMaResImg"
+            app:layout_constraintTop_toBottomOf="@+id/tvAtMaArticleTitle" />
+
+        <TextView
+            android:id="@+id/tvAtMaUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/textArticleWirter"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/imAtMaResImg"
+            app:layout_constraintTop_toBottomOf="@+id/tvAtMaArticleTime" />
+
+        <TextView
+            android:id="@+id/tvAtMaArticleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/textArticleText"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/imAtMaResImg"
+            app:layout_constraintTop_toBottomOf="@+id/tvAtMaUserName" />
+
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/tvResHours"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="8dp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:text="營業時間："-->
+        <!--        android:textSize="12sp"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/imResImg"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/tvResName" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

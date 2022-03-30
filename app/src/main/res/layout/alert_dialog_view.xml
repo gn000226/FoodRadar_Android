@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:id="@+id/svUseCard"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvUseInfo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="當您領取優惠券後，將收藏至您的收藏優惠券專區。收藏時請注意優惠券上的限制條件，如：『最低消費人數：2人』。\n兌換優惠券：要使用優惠券時，只要到優惠餐廳，請店員點選『打勾』即可。成功獲得優惠。"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/svUseCard" />
+
+    <ImageView
+        android:id="@+id/imageAlert"
+        android:layout_width="343dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/no_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUseInfo1"
+        app:srcCompat="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/tvUseInfo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="按下『打勾』後，就能得到店家招待的特別折扣或餐點囉！"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageAlert" />
+
+
+    <ImageView
+        android:id="@+id/imageAlert2"
+        android:layout_width="343dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/use_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUseInfo2"
+        app:srcCompat="@drawable/use_image" />
+
+    <ImageButton
+        android:id="@+id/ibUseCard"
+        android:layout_width="343dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/svUseCard"
+        app:layout_constraintStart_toStartOf="@+id/svUseCard"
+        app:layout_constraintTop_toBottomOf="@+id/imageAlert2"
+        app:srcCompat="@android:drawable/ic_notification_clear_all" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
